@@ -173,7 +173,7 @@ const Login = () => {
             i18nKey="Sign In"
           />
           <FsTypography variant="body2" align="center" sx={{ mt: 2 }}>
-            Do not have an account?
+            Don&apos;t have an account?
             <FsButton
               sx={{ mx: 1 }}
               i18nKey="Create account"

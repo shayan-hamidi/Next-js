@@ -36,7 +36,7 @@ export default async function Dashboard() {
           maxWidth: '600px',
         }}
       >
-        Welcome back, user! You're viewing protected content.
+        Welcome back, user! You&apos;re viewing protected content.
       </Typography>
 
       <Box sx={{ display: 'flex', gap: 2 }}>
