@@ -5,6 +5,7 @@ import './globals.css';
 import { FsNextIntlClientProvider, FsThemeContextProvider } from '@fs/utils';
 import { FsToaster } from '@fs/core';
 import localFont from 'next/font/local';
+import '../assets/fonts/iranSans/webfont/staticfonts/IRANSansX-Regular';
 
 export const iransansxv = localFont({
   src: '../assets/fonts/iranSans/webfont/IRANSansXV.woff',
@@ -22,12 +23,12 @@ export const iransansxv = localFont({
 export const iransansx = localFont({
   src: [
     {
-      path: '../assets/fonts/iranSans/webfont/staticfonts/iransansx-regular.woff',
+      path: '../assets/fonts/iranSans/webfont/staticfonts/IRANSansX-Regular.woff',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../assets/fonts/iranSans/webfont/staticfonts/iransansx-bold.woff',
+      path: '../assets/fonts/iranSans/webfont/staticfonts/IRANSansX-Bold.woff',
       weight: '700',
       style: 'normal',
     },
