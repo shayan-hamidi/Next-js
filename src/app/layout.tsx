@@ -5,7 +5,6 @@ import './globals.css';
 import { FsNextIntlClientProvider, FsThemeContextProvider } from '@fs/utils';
 import { FsToaster } from '@fs/core';
 import localFont from 'next/font/local';
-import '../assets/fonts/iranSans/webfont/staticfonts/IRANSansX-Regular';
 
 export const iransansxv = localFont({
   src: '../assets/fonts/iranSans/webfont/IRANSansXV.woff',
