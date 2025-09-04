@@ -72,10 +72,6 @@ const Login = () => {
     setMounted(true);
   }, []);
 
-  const handleSubmit = (data: any) => {
-    console.log(data);
-  };
-
   const navigateToSignup = () => {
     router.push('/sign-up');
   };
@@ -121,11 +117,7 @@ const Login = () => {
           align="center"
           sx={{ mb: 3, fontWeight: 700 }}
         />
-        <FsFormProvider
-          name="login"
-          methods={methods}
-          formProps={{ onSubmit: methods.handleSubmit(handleSubmit) }}
-        >
+        <FsFormProvider name="login" methods={methods}>
           <Grid
             container
             gap={3}
@@ -181,7 +173,7 @@ const Login = () => {
             i18nKey="Sign In"
           />
           <FsTypography variant="body2" align="center" sx={{ mt: 2 }}>
-            Don't have an account?
+            Do not have an account?
             <FsButton
               sx={{ mx: 1 }}
               i18nKey="Create account"

@@ -1,16 +1,8 @@
-// import { auth } from '@/auth';
 import { FsButton } from '@fs/core';
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
-// import { redirect } from 'next/navigation';
 
 export default async function Dashboard() {
-  // const session = await auth();
-
-  // if (!session) {
-  //   redirect('/login');
-  // }
-
   return (
     <Box
       sx={{
@@ -44,7 +36,7 @@ export default async function Dashboard() {
           maxWidth: '600px',
         }}
       >
-        Welcome back, {`session.user?.name`}! You're viewing protected content.
+        Welcome back, user! You're viewing protected content.
       </Typography>
 
       <Box sx={{ display: 'flex', gap: 2 }}>

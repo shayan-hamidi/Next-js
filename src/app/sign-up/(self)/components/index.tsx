@@ -72,9 +72,6 @@ const SignUp = () => {
     setMounted(true);
   }, []);
 
-  const handleSubmit = (data: any) => {
-    console.log(data);
-  };
   const router = useRouter();
   const navigateToLogin = () => {
     router.push('/login');
@@ -122,11 +119,7 @@ const SignUp = () => {
           sx={{ mb: 3, fontWeight: 700 }}
         />
 
-        <FsFormProvider
-          name="signup"
-          methods={methods}
-          formProps={{ onSubmit: methods.handleSubmit(handleSubmit) }}
-        >
+        <FsFormProvider name="signup" methods={methods}>
           <Grid
             container
             gap={3}
