@@ -720,10 +720,9 @@ const UiComponents = () => {
         />
         <Grid container spacing={3} mt={1}>
           <Grid size={12}>
-            <FsAccordion
-              titleKey={'Accordion Title'}
-              children={<Box>Accordion detials</Box>}
-            />
+            <FsAccordion titleKey={'Accordion Title'}>
+              <Box>Accordion detials</Box>
+            </FsAccordion>
           </Grid>
           <Grid size={12}>
             <FsButton i18nKey="tooltipppp" tooltipProps={{ i18nKey: 'ssss' }} />
